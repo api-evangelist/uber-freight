@@ -1,0 +1,61 @@
+{
+  "provider": "uber-freight",
+  "url": "https://www.uberfreight.com/en-US/blog/",
+  "fetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "Q2 freight market update: Market pressures converge and create urgency",
+      "url": "https://www.uberfreight.com/en-US/blog/q2-freight-market-update-market-pressures-converge-and-create-urgency",
+      "date": "2026-06-04",
+      "description": "Q2 2026 update covering tightening capacity, diesel prices, congestion, theft, and cross-border volatility."
+    },
+    {
+      "title": "Produce season is here. Are you ready?",
+      "url": "https://www.uberfreight.com/en-US/blog/produce-season-is-here-are-you-ready",
+      "date": "2026-06-04",
+      "description": "Produce season is hitting harder and earlier, with tight capacity and soaring reefer rates."
+    },
+    {
+      "title": "Why now is the time to lock in intermodal freight rates",
+      "url": "https://www.uberfreight.com/en-US/blog/why-now-is-the-time-to-lock-in-intermodal-freight-rates",
+      "date": "2026-06-04",
+      "description": "Intermodal rates remain below truckload pricing, but this window is closing quickly before peak season increases costs."
+    },
+    {
+      "title": "Uber Freight honors 2025 Carrier Award winners",
+      "url": "https://www.uberfreight.com/en-US/blog/uber-freight-honors-2025-carrier-award-winners",
+      "date": "2026-04-28",
+      "description": "Recognition of 2025 Carrier of the Year Award winners across various fleet categories."
+    },
+    {
+      "title": "Beyond the pump: 7 Levers shippers can pull when fuel prices jump",
+      "url": "https://www.uberfreight.com/en-US/blog/beyond-the-pump-7-levers-shippers-can-pull-when-fuel-prices-jump",
+      "date": "2026-04-01",
+      "description": "Fuel prices are spiking — discover 7 strategic levers shippers can pull, from intermodal shifts to smarter trailer utilization and fuel matrices, to cut burn and avoid overpaying."
+    },
+    {
+      "title": "Finding hidden value: What a multi-shipper network analysis reveals",
+      "url": "https://www.uberfreight.com/en-US/blog/finding-hidden-value-what-a-multi-shipper-network-analysis-reveals",
+      "date": "2026-04-08",
+      "description": "Network analysis uncovers value that existing operating models may be limiting."
+    },
+    {
+      "title": "Moving from good to great: Growing into the next stage of transportation maturity",
+      "url": "https://www.uberfreight.com/en-US/blog/the-transportation-maturity-gap",
+      "date": "2026-03-26",
+      "description": "Examines how a 4-stage maturity model and managed transportation improve performance outcomes."
+    },
+    {
+      "title": "Why leading shippers are tapping into network scale to cut transportation costs",
+      "url": "https://www.uberfreight.com/en-US/blog/the-power-of-multi-shipper-networks-in-transportation-strategies",
+      "date": "2026-03-25",
+      "description": "Multi-shipper networks enhance lane density, expand capacity, and help control costs."
+    },
+    {
+      "title": "Q1 2026 freight market update: What shippers should be watching now",
+      "url": "https://www.uberfreight.com/en-US/blog/freight-market-update",
+      "date": "2026-03-12",
+      "description": "Q1 analysis highlighting shortened planning cycles and increasing importance of flexibility."
+    }
+  ]
+}

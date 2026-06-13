@@ -1,0 +1,76 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.uberfreight.com/",
+  "name": "Uber Freight",
+  "description": "Uber Freight is a digital freight brokerage platform providing 24/7 access to truckload freight with instant quoting and booking, real-time shipment visibility, lane management, and carrier network pricing.",
+  "url": "https://www.uberfreight.com/",
+  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "sameAs": [
+    "https://x.com/UberFreight",
+    "https://www.linkedin.com/company/uber-freight/",
+    "https://github.com/uber"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "freight-api@uber.com",
+      "contactType": "API Access"
+    },
+    {
+      "@type": "ContactPoint",
+      "email": "freight-sales-engineering@uber.com",
+      "contactType": "Sales Engineering"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Uber Freight APIs",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Uber Freight Loads API",
+        "description": "Core REST API for generating price quotes for truckload shipments, tendering loads to Uber Freight's carrier network, and cancelling tenders. Returns guaranteed spot rates with expiration timestamps. Requires the freight.loads OAuth 2.0 scope.",
+        "url": "https://developer.uberfreight.com/get-started",
+        "category": "Freight API"
+      },
+      {
+        "@type": "Offer",
+        "name": "Uber Freight Scheduling API",
+        "description": "Scheduling API implementing the Scheduling Standards Consortium (SSC) Technical Standard for automated dock appointment booking across Uber Freight's TMS network of 1,500+ facilities.",
+        "url": "https://www.uberfreight.com/en-US/blog/uber-freight-releases-pilot-for-scheduling-api",
+        "category": "Scheduling API"
+      },
+      {
+        "@type": "Offer",
+        "name": "Uber Freight Real-Time Tracking API",
+        "description": "Provides real-time shipment visibility from pickup through delivery across Uber Freight's carrier network.",
+        "url": "https://www.uberfreight.com/en-US/technology/integrations",
+        "category": "Tracking API"
+      }
+    ]
+  },
+  "keywords": [
+    "Freight",
+    "Logistics",
+    "Trucking",
+    "Shipping",
+    "Transportation",
+    "Supply Chain",
+    "Truckload",
+    "Carrier Network",
+    "TMS",
+    "Digital Freight Broker"
+  ],
+  "areaServed": ["US", "Europe"],
+  "knowsAbout": [
+    "Truckload Freight",
+    "Freight Brokerage",
+    "Carrier Network",
+    "Real-Time Shipment Tracking",
+    "Dock Scheduling",
+    "Transportation Management Systems",
+    "OAuth 2.0",
+    "REST APIs"
+  ]
+}
