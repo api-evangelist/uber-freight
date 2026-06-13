@@ -1,0 +1,41 @@
+name: Uber Freight Plans and Pricing
+description: >-
+  Uber Freight operates as an enterprise digital freight brokerage platform.
+  API access is not self-serve; it is provisioned through Uber's developer
+  portal and requires email approval from the Uber Freight API team. Pricing
+  for freight shipments is dynamic and based on real-time market capacity data,
+  with guaranteed spot rates available up to 14 days in advance. No published
+  SaaS subscription tiers exist for the API itself; commercial terms are
+  negotiated per enterprise account.
+plans:
+  - name: Enterprise / Managed Transportation
+    description: >-
+      Full-scale TMS platform for mid-market and enterprise shippers covering
+      procurement, execution, visibility, settlement, and optimization across
+      all modes. API access (freight.loads scope) is granted on request after
+      email approval by freight-api@uber.com.
+    features:
+      - Instant price quoting (real-time capacity pricing)
+      - Guaranteed spot rates up to 14 days in advance
+      - Load tendering and booking
+      - Real-time shipment tracking (pickup through delivery)
+      - Scheduling API (SSC Technical Standard)
+      - TMS integrations (Oracle TM, SAP, Blue Yonder, BluJay)
+      - Dedicated lane and contract rate management
+      - AI-driven optimization and predictive modeling
+      - Carrier network access (50,000+ U.S. and European carriers)
+    pricing: Contact vendor / negotiated enterprise contract
+    url: https://www.uberfreight.com/en-US/partners/integrations
+  - name: Sandbox / Developer Trial
+    description: >-
+      A sandbox environment is available for developers integrating via the
+      Uber Freight connector (e.g., Microsoft Dynamics 365 Intelligent Order
+      Management). Credentials are obtained through developer.uber.com by
+      registering an app and requesting the freight.loads scope.
+    features:
+      - Sandbox environment (separate from production)
+      - Price quote generation
+      - Load tendering
+      - Tender cancellation
+    pricing: Free (requires OAuth client credentials approval)
+    url: https://developer.uber.com/dashboard/

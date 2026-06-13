@@ -1,0 +1,45 @@
+name: Uber Freight FinOps
+description: >-
+  Financial operations considerations for teams integrating with Uber Freight
+  APIs. Costs are primarily driven by freight brokerage fees embedded in
+  dynamic shipment pricing rather than API call charges. There are no published
+  per-call API fees; all monetization flows through freight transaction margins.
+costDrivers:
+  - name: Freight Transaction Pricing
+    description: >-
+      Uber Freight earns revenue through the spread between shipper rates and
+      carrier payments on each truckload transaction. Shippers receive instant
+      quotes through the API; the cost is the freight rate returned in the
+      quote response (price.amount in USD cents).
+    type: per-transaction
+    notes: >-
+      Guaranteed spot rates are available up to 14 days in advance. Dynamic
+      pricing reflects real-time carrier capacity; rates can shift
+      significantly during market disruptions (e.g., COVID-19 saw 150%+ API
+      volume surge).
+  - name: No Direct API Subscription Fee
+    description: >-
+      API access itself carries no published subscription charge. Costs are
+      entirely usage-dependent (freight transaction value).
+    type: none
+    notes: >-
+      Enterprise accounts negotiate commercial terms directly with Uber
+      Freight sales engineering. Hidden or accessorial charges have been
+      reported by some users; review quotes carefully before tendering.
+  - name: TMS Platform Fees
+    description: >-
+      Uber Freight's full TMS product (managed transportation) may carry
+      platform licensing fees negotiated at the enterprise level. These are
+      not publicly disclosed.
+    type: negotiated
+    notes: Contact Uber Freight sales for TMS pricing.
+costOptimization:
+  - tip: Lock in rates early using the guaranteed spot rate window (up to 14 days in advance) to avoid volatile spot pricing.
+  - tip: Use the Scheduling API to automate appointment booking and reduce manual touchpoints, lowering operational overhead.
+  - tip: Monitor quote expiration_time_utc in API responses; expired quotes require a new quote call, which may return a higher rate.
+  - tip: Validate all-in costs including accessorials before tendering; API quotes may not include all surcharges.
+  - tip: Integrate Uber Freight as a backup capacity source within routing guide logic to avoid premium emergency rates.
+billing:
+  currency: USD
+  invoicing: Per-shipment settlement; typical freight industry net terms apply
+  transparency: Low — pricing is dynamic and enterprise terms are not publicly disclosed

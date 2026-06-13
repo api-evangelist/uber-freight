@@ -1,0 +1,40 @@
+name: Uber Freight Rate Limits
+description: >-
+  Uber Freight API rate limits are documented for the Microsoft Power Platform
+  connector and follow Uber's general API throttling policies. Specific
+  per-endpoint limits for enterprise integrations are governed by negotiated
+  service agreements.
+limits:
+  - scope: Power Platform Connector (Microsoft)
+    calls: 100
+    period: 60 seconds
+    notes: >-
+      Applies to connections created via the Uber Freight connector in
+      Microsoft Power Automate, Logic Apps, Copilot Studio, and Power Apps.
+  - scope: Uber General API – Server Token
+    calls: 2000
+    period: 1 hour
+    notes: >-
+      General Uber platform rate limit for server-token authenticated requests.
+      Freight API endpoints follow similar patterns.
+  - scope: Uber General API – OAuth Bearer Token
+    calls: 2000
+    period: 1 hour per user
+    notes: >-
+      OAuth bearer token rate limit applied per authenticated user session.
+  - scope: Uber General API – Short-Term Burst
+    calls: 500
+    period: 5 seconds per app
+    notes: >-
+      Short-term burst limit for all Uber platform APIs to prevent abuse.
+authentication:
+  type: OAuth 2.0 Client Credentials
+  notes: >-
+    Developers register an app at developer.uber.com, obtain a client_id and
+    client_secret, then email freight-api@uber.com to request the
+    freight.loads scope. Uber responds within 1 business day. Both sandbox
+    and production environments are supported via the same credentials flow.
+  tokenEndpoint: https://auth.uber.com/oauth/v2/token
+  scopes:
+    - name: freight.loads
+      description: Grants access to Uber Freight load pricing, tendering, and management endpoints
