@@ -1,7 +1,7 @@
 {
   "provider": "uber-freight",
   "url": "https://www.uberfreight.com/en-US/blog/",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
       "title": "Q2 freight market update: Market pressures converge and create urgency",
@@ -31,7 +31,7 @@
       "title": "Beyond the pump: 7 Levers shippers can pull when fuel prices jump",
       "url": "https://www.uberfreight.com/en-US/blog/beyond-the-pump-7-levers-shippers-can-pull-when-fuel-prices-jump",
       "date": "2026-04-01",
-      "description": "Fuel prices are spiking — discover 7 strategic levers shippers can pull, from intermodal shifts to smarter trailer utilization and fuel matrices, to cut burn and avoid overpaying."
+      "description": "Fuel prices are spiking \u2014 discover 7 strategic levers shippers can pull, from intermodal shifts to smarter trailer utilization and fuel matrices, to cut burn and avoid overpaying."
     },
     {
       "title": "Finding hidden value: What a multi-shipper network analysis reveals",
@@ -57,5 +57,16 @@
       "date": "2026-03-12",
       "description": "Q1 analysis highlighting shortened planning cycles and increasing importance of flexibility."
     }
-  ]
+  ],
+  "repo": "uber-freight",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/uber-freight/",
+      "feed_url": "https://www.linkedin.com/company/uber-freight/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0
 }
