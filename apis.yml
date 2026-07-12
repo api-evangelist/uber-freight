@@ -81,6 +81,8 @@ apis:
       - type: Documentation
         url: https://www.uberfreight.com/en-US/technology/integrations
 common:
+  - type: DomainSecurity
+    url: security/uber-freight-domain-security.yml
   - type: Website
     url: https://www.uberfreight.com/
   - type: Documentation
