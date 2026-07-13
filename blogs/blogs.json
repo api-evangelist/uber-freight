@@ -2,17 +2,20 @@
   "repo": "uber-freight",
   "feeds": [
     {
-      "source": "https://www.uberfreight.com/en-US/blog/",
+      "source": "https://www.uberfreight.com/en-US/rss.xml",
       "feed_url": "https://www.uberfreight.com/en-US/rss.xml",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "feed"
     },
     {
       "source": "https://www.linkedin.com/company/uber-freight/",
-      "error": "HTTPError"
+      "feed_url": "https://www.linkedin.com/company/uber-freight/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-06-27T12:03:07Z",
-  "post_count": 0
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 50
 }
