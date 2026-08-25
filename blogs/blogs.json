@@ -5,18 +5,14 @@
       "source": "https://www.uberfreight.com/en-US/rss.xml",
       "feed_url": "https://www.uberfreight.com/en-US/rss.xml",
       "title": "",
-      "saved": 1,
+      "saved": 0,
       "method": "feed"
     },
     {
       "source": "https://www.linkedin.com/company/uber-freight/",
-      "feed_url": "https://www.linkedin.com/company/uber-freight/",
-      "title": "",
-      "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-08-15T12:11:08Z",
+  "fetched": "2026-08-22T20:20:02Z",
   "post_count": 53
 }
