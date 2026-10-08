@@ -43,3 +43,23 @@ plans:
       - Tender cancellation
     pricing: Free (requires OAuth client credentials approval)
     url: https://developer.uber.com/dashboard/
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  units: []
+  plans:
+  - name: Enterprise / Managed Transportation
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Sandbox / Developer Trial
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
