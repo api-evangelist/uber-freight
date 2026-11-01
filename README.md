@@ -64,32 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Uber Freight is a digital freight brokerage platform providing 24/7 access to truckload freight with instant quoting and booking, real-time shipment visibility, lane management, and carrier network pricing. Its REST APIs enable shippers and TMS platforms to generate price quotes, tender loads, cancel tenders, and automate facility scheduling backed by a network of 50,000+ carriers across the U.S. and Europe.
+Uber Freight is a digital freight brokerage platform providing 24/7 access to truckload freight with instant quoting and booking, real-time shipment visibility, lane management, and carrier network pricing. Its REST APIs enable shippers and TMS platforms to generate price quotes, tender loads, cancel tenders, and automate facility scheduling — all backed by a network of 50,000+ carriers across the U.S. and Europe. API access uses OAuth 2.0 client credentials and requires approval of the freight.loads scope through the Uber developer portal.
 
-**Website:** https://www.uberfreight.com/  
-**Developer Portal:** https://developer.uberfreight.com/get-started  
-**Status:** https://uber.statuspage.io/  
-**Blog:** https://www.uberfreight.com/en-US/blog/  
+**Areas:** Freight · Logistics · Trucking · Shipping · Transportation · Supply Chain · Truckload · Carrier Network · TMS · Digital Freight Broker
 
-## APIs
+## Uber Freight on APIs.io
 
-- **Loads API** — Generate price quotes, tender loads, cancel tenders (OAuth 2.0, freight.loads scope)
-- **Scheduling API** — Automated dock appointment booking via Scheduling Standards Consortium (SSC) Technical Standard
-- **Real-Time Tracking API** — Shipment visibility from pickup through delivery; embedded in Oracle TM, SAP, Blue Yonder, BluJay TMS integrations
+Everything profiled for Uber Freight is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/uber-freight/](https://apis.io/providers/uber-freight/)** — or go straight to one of the APIs or properties below.
 
-## Repository Contents
+### APIs (3)
 
-| Path | Description |
-|------|-------------|
-| `apis.yml` | APIs.json 0.19 provider index |
-| `plans/uber-freight-plans-pricing.yml` | Pricing plans and access model |
-| `rate-limits/uber-freight-rate-limits.yml` | Rate limits and authentication details |
-| `finops/uber-freight-finops.yml` | FinOps cost drivers and optimization tips |
+- [Uber Freight Loads API](https://apis.io/apis/uber-freight/uber-freight-loads-api/) — Core REST API for generating price quotes for truckload shipments, tendering loads to Uber Freight's carrier network, and cancelling tenders. Returns…
+- [Uber Freight Scheduling API](https://apis.io/apis/uber-freight/uber-freight-scheduling-api/) — Scheduling API implementing the Scheduling Standards Consortium (SSC) Technical Standard for automated dock appointment booking across Uber Freight's TMS…
+- [Uber Freight Real-Time Tracking API](https://apis.io/apis/uber-freight/uber-freight-real-time-tracking-api/) — Provides real-time shipment visibility from pickup through delivery across Uber Freight's carrier network. Used by TMS integrations with Oracle…
 
-## Access
+### Published properties
 
-API access requires registering an app at https://developer.uber.com/dashboard/ and emailing freight-api@uber.com to request the `freight.loads` scope. Uber responds within 1 business day.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
----
+#### Security (1)
 
-Maintained by [Kin Lane](mailto:kin@apievangelist.com) via [API Evangelist](https://apievangelist.com).
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Uber Freight Domain Security](https://apis.io/security/uber-freight/uber-freight-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Uber Freight Plans Pricing](https://apis.io/plans/uber-freight/uber-freight-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Uber Freight Rate Limits](https://apis.io/rate-limits/uber-freight/uber-freight-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Uber Freight Finops](https://apis.io/finops/uber-freight/uber-freight-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.uberfreight.com/)
+- [Documentation](https://developer.uberfreight.com/get-started)
+- [Pricing](https://www.uberfreight.com/en-US/partners/integrations)
+- [Blog](https://www.uberfreight.com/en-US/blog/)
+- [Status](https://uber.statuspage.io/)
+
+## API Evangelist rating
+
+**Kin Score 17.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 15.8 |
+
+**Agent readiness 3.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.0** — Telecommunications
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/uber-freight/](https://apis.io/providers/uber-freight/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Uber Freight: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/uber-freight/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
